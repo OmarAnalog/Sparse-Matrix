@@ -1,12 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <assert.h>
 using namespace std;
-void File() // low l r high
-{
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-}
 struct colNode{
     int data,col;
     colNode*next{};
@@ -198,7 +192,6 @@ public:
 };
 int main()
 {
-    File();
     SparseMatrix mat(10,10);
     mat.set_value(3,1,2);
     mat.set_value(4,1,5);
